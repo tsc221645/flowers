@@ -1,5 +1,6 @@
 import turtle as t
 t.speed(20)
+t.bgcolor("blue")
 def petalo1():
     t.color("#ffec24")
     t.fillcolor("#f7ff69")
@@ -33,6 +34,18 @@ def petalo3():
     t.circle(100, 100)
     t.end_fill()
 
+def centro():
+    t.penup()
+    t.right(90)
+    t.backward(20)
+    t.pendown()
+    t.color("brown")
+    t.fillcolor("brown")
+    t.pendown()
+    t.begin_fill()
+    t.circle(25)
+    t.end_fill()
+
 for i in range(0,13):
     t.right(30)
     petalo3()
@@ -45,3 +58,4 @@ for i in range(0,13):
     t.right(30)
     petalo1()
 
+centro()
